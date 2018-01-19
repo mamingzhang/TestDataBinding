@@ -37,6 +37,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/lastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="@{(view) -> listenerbindings.onLastNameClick(view)}"
@@ -44,6 +45,15 @@
             android:text="@{MyStringUtils.capitalize(user.lastName)}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/firstName" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@{String.valueOf(user.age)}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastName" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
