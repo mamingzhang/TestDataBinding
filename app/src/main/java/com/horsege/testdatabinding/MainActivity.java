@@ -1,5 +1,6 @@
 package com.horsege.testdatabinding;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         user = new User("First Name", "Last Name");
         binding.setUser(user);
 
-//        Intent intent = new Intent(this, SecondActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
 
-        testObservableObjects();
+//        testObservableObjects();
     }
 
     private void testObservableObjects() {
