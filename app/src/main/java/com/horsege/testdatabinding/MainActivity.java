@@ -4,7 +4,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.horsege.testdatabinding.databinding.ActivityMainBinding;
+import com.horsege.testdatabinding.databinding.MainActivityBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        MainActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         User user = new User("First Name", "Last Name");
         binding.setUser(user);
